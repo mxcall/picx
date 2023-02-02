@@ -12,7 +12,7 @@ import TimeHelper from '@/utils/time-helper'
 
 const initUserConfigInfo = (): UserConfigInfoModel => {
   const initConfig: UserConfigInfoModel = {
-    token: '',
+    token: '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AB',
     owner: '',
     email: '',
     name: '',
@@ -22,8 +22,8 @@ const initUserConfigInfo = (): UserConfigInfoModel => {
     branchMode: BranchModeEnum.reposBranch,
     branchList: [],
     selectedBranch: '',
-    selectedDir: '',
-    dirMode: DirModeEnum.reposDir,
+    selectedDir: TimeHelper.getXpicDate(),
+    dirMode: DirModeEnum.newDir,
     dirList: [],
     loggingStatus: false,
     selectedDirList: [],

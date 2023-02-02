@@ -307,12 +307,14 @@ function dirModeChange(dirMode: DirModeEnum) {
 
     case DirModeEnum.autoDir:
       // 自动目录，根据当天日期自动生成
-      userConfigInfo.selectedDir = TimeHelper.getYyyyMmDd()
+      // userConfigInfo.selectedDir = TimeHelper.getYyyyMmDd()
+      userConfigInfo.selectedDir = TimeHelper.getXpicDate()
       break
 
     case DirModeEnum.newDir:
       // 手动输入的新建目录
-      userConfigInfo.selectedDir = 'xxx'
+      // userConfigInfo.selectedDir = ''
+      userConfigInfo.selectedDir = TimeHelper.getXpicDate()
       break
 
     case DirModeEnum.reposDir:

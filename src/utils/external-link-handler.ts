@@ -28,7 +28,9 @@ export const generateExternalLink = (
   content: any,
   config: UserConfigInfoModel
 ): string => {
-  const staticalyLink: string = `https://cdn.staticaly.com/gh/${config.owner}/${config.selectedRepos}@${config.selectedBranch}/${content.path}`
+  // change by weiqi
+  // const staticalyLink: string = `https://cdn.staticaly.com/gh/${config.owner}/${config.selectedRepos}@${config.selectedBranch}/${content.path}`
+  const staticalyLink: string = `https://gcore.jsdelivr.net/gh/${config.owner}/${config.selectedRepos}@${config.selectedBranch}/${content.path}`
   const zzkoLink: string = `https://jsd.cdn.zzko.cn/gh/${config.owner}/${config.selectedRepos}@${config.selectedBranch}/${content.path}`
   const jsdelivrLink: string = `https://cdn.jsdelivr.net/gh/${config.owner}/${config.selectedRepos}@${config.selectedBranch}/${content.path}`
   const githubLink: string = decodeURI(content.download_url)

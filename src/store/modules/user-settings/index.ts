@@ -10,10 +10,10 @@ import { getLocalItem } from '@/utils/common-utils'
 const initSettings: UserSettingsModel = {
   defaultHash: true,
   defaultMarkdown: false,
-  defaultPrefix: false,
-  prefixName: '',
+  defaultPrefix: true,
+  prefixName: 'xpic_',
   isCompress: true,
-  compressEncoder: CompressEncoderMap.webP,
+  compressEncoder: CompressEncoderMap.mozJPEG,
   themeMode: 'light',
   autoLightThemeTime: ['08:00', '19:00'],
   elementPlusSize: 'default',

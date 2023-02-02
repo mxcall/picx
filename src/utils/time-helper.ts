@@ -11,6 +11,15 @@ export default class TimeHelper {
     return `${yyyy}${this.zerofill(MM)}${this.zerofill(DD)}`
   }
 
+  static getXpicDate(now: number = Date.now()) {
+    const date: Date = new Date(now)
+    const yyyy = date.getFullYear()
+    const MM = date.getMonth() + 1
+    const DD = date.getDate()
+    const allStr = `${yyyy}${this.zerofill(MM)}${this.zerofill(DD)}`
+    return `picx/${allStr.substring(0, 4)}/${allStr.substring(4, 6)}`
+  }
+
   static formatTimestamp(now: number = Date.now()) {
     const date: Date = new Date(now)
     const YYYY = date.getFullYear()

@@ -8,7 +8,7 @@
         <div class="title">PicX</div>
       </div>
       <div class="website-count" @click="goGitHubRepo">
-        <el-tooltip content="感觉好用，点 Star 支持作者(*￣︶￣)" placement="bottom">
+        <el-tooltip content="上传出错，设置chrome config" placement="bottom">
           <site-count :isuv="false" />
         </el-tooltip>
       </div>
@@ -103,7 +103,9 @@ export default defineComponent({
     }
 
     const goGitHubRepo = () => {
-      window.open('https://github.com/XPoet/picx')
+      // window.open('https://github.com/XPoet/picx')
+      // window.open('chrome://flags/#block-insecure-private-network-requests')
+      window.open('https://mxcall.gitee.io/')
     }
 
     return {

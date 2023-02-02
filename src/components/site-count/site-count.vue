@@ -3,7 +3,7 @@
     超过
     <span id="busuanzi_value_site_uv" class="uv" v-show="isuv"></span>
     <span id="busuanzi_value_site_pv" class="pv" v-show="!isuv"></span>
-    次被使用
+    次被使用, 若F12有误, chrome://flags/#block-insecure-private-network-requests
   </span>
 </template>
 

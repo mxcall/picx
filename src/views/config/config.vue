@@ -34,6 +34,10 @@
       v-loading="loading"
       element-loading-text="加载中..."
     >
+      <el-form-item v-if="userConfigInfo.luyaLink" label="加速地址">
+        <el-input v-model="userConfigInfo.luyaLink" @input="persistUserConfigInfo()"></el-input>
+      </el-form-item>
+
       <el-form-item v-if="userConfigInfo.owner" label="用户名">
         <el-input v-model="userConfigInfo.owner" readonly></el-input>
       </el-form-item>

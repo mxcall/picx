@@ -13,6 +13,7 @@ import TimeHelper from '@/utils/time-helper'
 const initUserConfigInfo = (): UserConfigInfoModel => {
   const initConfig: UserConfigInfoModel = {
     token: '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AB',
+    luyaLink: 'gcore.jsdelivr.net',
     owner: '',
     email: '',
     name: '',

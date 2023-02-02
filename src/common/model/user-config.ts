@@ -18,6 +18,7 @@ export enum BranchModeEnum {
 
 export interface UserConfigInfoModel {
   token: string
+  luyaLink: string
   owner: string
   email: string
   name: string

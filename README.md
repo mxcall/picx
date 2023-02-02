@@ -2,8 +2,12 @@
 <img width="100" align="right" alt="PicX" src="https://cdn.staticaly.com/gh/XPoet/image-hosting@master/PicX/picx-logo.png">
 </a>
 
-# PicX 图床
-
+# PicX 图床 (需要升级node 版本才能编译)
+目前 Node.js v18.12.1 才能正常编译
+```
+npm install
+npm run build
+```
 [![Author](https://img.shields.io/badge/author-XPoet-violet.svg)](https://github.com/XPoet)
 [![Release](https://img.shields.io/github/release/XPoet/picx.svg)](https://github.com/XPoet/picx/releases)
 [![License](https://img.shields.io/github/license/XPoet/picx.svg)](https://github.com/XPoet/picx/blob/master/LICENSE)

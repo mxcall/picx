@@ -24,7 +24,7 @@ const initUserConfigInfo = (): UserConfigInfoModel => {
     branchList: [],
     selectedBranch: '',
     selectedDir: TimeHelper.getXpicDate(),
-    dirMode: DirModeEnum.newDir,
+    dirMode: DirModeEnum.autoDir,
     dirList: [],
     loggingStatus: false,
     selectedDirList: [],
@@ -47,7 +47,7 @@ const initUserConfigInfo = (): UserConfigInfoModel => {
     }
 
     if (initConfig.dirMode === DirModeEnum.autoDir) {
-      initConfig.selectedDir = TimeHelper.getYyyyMmDd()
+      initConfig.selectedDir = TimeHelper.getXpicDate()
     }
 
     return initConfig

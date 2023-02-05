@@ -1,4 +1,5 @@
 import { getUuid } from './common-utils'
+import TimeHelper from '@/utils/time-helper'
 
 /**
  * get filename
@@ -37,8 +38,11 @@ export const getFileSize = (size: number) => {
 export const filenameHandle = (filename: string | undefined) => {
   if (filename) {
     return {
-      name: getFilename(filename),
-      hash: getUuid(),
+      // change by luya
+      // name: getFilename(filename),
+      // hash: getUuid(),
+      name: '',
+      hash: TimeHelper.getLuyaTimeStamp(),
       suffix: getFileSuffix(filename)
     }
   }

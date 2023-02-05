@@ -47,7 +47,7 @@ export function getImage(base64Data: string, file: any) {
   curImg.filename.hash = hash
   curImg.filename.suffix = suffix
   curImg.filename.now = userSettings.defaultHash
-    ? `${name}.${hash}.${suffix}`
+    ? `${name}${hash}.${suffix}`
     : `${name}.${suffix}`
   curImg.filename.initName = name
   curImg.filename.isHashRename = userSettings.defaultHash

@@ -310,7 +310,7 @@ function dirModeChange(dirMode: DirModeEnum) {
       break
 
     case DirModeEnum.autoDir:
-      // 自动目录，根据当天日期自动生成
+      // 自动目录，根据当天日期自动生成 change by luya
       // userConfigInfo.selectedDir = TimeHelper.getYyyyMmDd()
       userConfigInfo.selectedDir = TimeHelper.getXpicDate()
       break
@@ -333,7 +333,7 @@ function dirModeChange(dirMode: DirModeEnum) {
       break
 
     default:
-      userConfigInfo.selectedDir = '/'
+      userConfigInfo.selectedDir = TimeHelper.getXpicDate()
       break
   }
   persistUserConfigInfo()

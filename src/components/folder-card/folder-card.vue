@@ -1,6 +1,6 @@
 <template>
   <div class="folder-card" @dblclick="dblclickFolder">
-    <el-tooltip v-if="mode === 'dir'" content="双击进入下一级目录" placement="top">
+    <el-tooltip v-if="mode === 'dir'" :content="$t('management.toNextDir')" placement="top">
       <div class="icon">
         <svg
           t="1639999626518"
@@ -25,6 +25,7 @@
         </svg>
       </div>
     </el-tooltip>
+    <div class="text" v-if="mode === 'dir'">{{ folderObj.dir }}</div>
 
     <div class="icon" v-if="mode === 'back'">
       <svg
@@ -44,14 +45,13 @@
         ></path>
       </svg>
     </div>
-    <div class="text" v-if="mode === 'dir'">{{ folderObj.dir }}</div>
-    <div class="text" v-if="mode === 'back'">双击后退</div>
+    <div class="text" v-if="mode === 'back'">{{ $t('management.back') }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useStore } from '@/store'
+import { useStore } from '@/stores'
 
 const store = useStore()
 
@@ -97,5 +97,5 @@ const dblclickFolder = () => {
 </script>
 
 <style scoped lang="stylus">
-@import 'folder-card.styl';
+@import 'folder-card.styl'
 </style>

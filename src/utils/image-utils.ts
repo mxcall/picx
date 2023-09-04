@@ -29,13 +29,13 @@ export const createUploadImageObject = (): UploadImageModel => {
       hash: '',
       suffix: '',
       name: '',
-      prefixName: '',
+      prefixName: 'xpic_',
       final: '',
       initName: '',
       newName: '',
       isAddHash: true,
       isRename: false,
-      isPrefixNaming: false,
+      isPrefixNaming: true,
       isTimestampNaming: false
     },
     beforeUploadStatus: {

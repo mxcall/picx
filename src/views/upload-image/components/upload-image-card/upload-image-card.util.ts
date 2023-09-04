@@ -36,7 +36,8 @@ export const hashRename = (isHash: boolean, img: UploadImageModel) => {
   img.filename.isAddHash = isHash
   if (isHash) {
     // img.filename.final = `${img.filename.name}.${img.filename.hash}.${img.filename.suffix}`
-    img.filename.final = `${TimeHelper.getLuyaTimeStamp()}.${img.filename.suffix}`
+    // img.filename.final = `${TimeHelper.getLuyaTimeStamp()}.${img.filename.suffix}`
+    img.filename.final = `${img.filename.prefixName}${TimeHelper.getLuyaTimeStamp()}.${img.filename.suffix}`
   } else {
     img.filename.final = `${img.filename.name}.${img.filename.suffix}`
   }
